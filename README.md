@@ -24,4 +24,19 @@ Apache Beam is a unified model for defining both batch and streaming data proces
 - [x] FlatMap: Applies a simple 1-to-many mapping function over each element in the collection. The many elements are flattened into the resulting collection.
 - [x] Filter: Given a predicate, filter out all elements that don’t satisfy that predicate. May also be used to filter based on an inequality with a given value based on the comparison ordering of the element.
 
+## ParDo
+- [x] ParDo is a Beam transform for generic parallel processing.
+- [x] The ParDo processing paradigm is similar to the “Map” phase of a Map/Shuffle/Reduce-style algorithm. A ParDo transform considers each element in the input PCollection, performs some processing function (your user code) on that element, and emits zero, one, or multiple elements to an output PCollection.
+- [x] ParDo is useful for a variety of common data processing operations, including:
+- [x]	Filtering a data set. 
+- [x]	Formatting or type-converting each element in a data set.
+- [x]	Extracting parts of each element in a data set. 
+- [x]	Performing computations on each element in a data set.
+- [x]	When applying a ParDo transform, need to provide user code in the form of a DoFn object.
+
+## DoFn
+- [x]	DoFn is a Beam SDK class that defines a distributed processing function.
+- [x]	The DoFn object that you pass to ParDo contains the processing logic that gets applied to the elements in the input collection. 
+
+
 
