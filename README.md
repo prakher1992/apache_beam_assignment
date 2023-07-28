@@ -9,7 +9,7 @@
 ```
 pip install -r requirements.txt
 ```
-
+4. Now execute the command ‘python pardo_pipeline.py’, and python simple_pipeline.py to run the scripts. 
 ## Apache Beam
 Apache Beam is a unified model for defining both batch and streaming data processing that can build portable Big data pipelines.
 - [x] Portable, beam pipeline once created in any language can be able to run on any execution framework like a spark, flink, cloud dataflow, etc.
