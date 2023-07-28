@@ -1,7 +1,6 @@
 import apache_beam as beam
 import re
 from stop_words import get_stop_words
-# print(get_stop_words('english'))
 
 class WordExtractingDoFn(beam.DoFn):
   def process(self, element):
@@ -28,7 +27,7 @@ with beam.Pipeline() as p:
   format_count = counts | 'Format' >> beam.MapTuple(format_result)
 
   filter_stop_words = (format_count
-                | "filtering the data with PASS" >> beam.Filter(lambda record: record[0] not in get_stop_words('english')))
+                | "filtering the data with stop words" >> beam.Filter(lambda record: record[0] not in get_stop_words('english')))
 
   filter_stop_words | 'Write_filter' >> beam.io.WriteToText("output_data/filter_count_output.txt")
   format_count | 'Write_Non_filter' >> beam.io.WriteToText("output_data/nonfilter_count_output.txt")
