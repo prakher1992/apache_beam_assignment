@@ -1,7 +1,7 @@
-# apache_beam_assignment
+# Apache Beam Pipeline
 
 ### Steps to Build  and Run Project
-1. Clone GitHub repository  for Apache Beam pipelines. ( [https://github.com/prakher1992/weather_portal](https://github.com/prakher1992/apache_beam_assignment.git))
+1. Clone GitHub repository  for Apache Beam pipelines. (https://github.com/prakher1992/apache_beam_assignment.git)
 
 2. Go to the root directory by executing "cd apache_beam_assignment"
 
