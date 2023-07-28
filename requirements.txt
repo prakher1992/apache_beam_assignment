@@ -1,0 +1,2 @@
+apache-beam==2.49.0
+stop-words==2018.7.23
