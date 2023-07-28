@@ -17,5 +17,11 @@ Apache Beam is a unified model for defining both batch and streaming data proces
 - [x] Input: text file, Big query, Avro files, database, stream (Kafka, google pub/sub), etc.
 - [x] Output: text file, database, Google storage bucket, stream (Kafka, google pub/sub), etc.
 - [x] PCollection: A PCollection is a data set or data stream. The data that a pipeline process is part of a PCollection.
-- [x] PTransform: A PTransform represents a data processing operation or a step in our pipeline. A transform is applied to zero or more PCollection objects and produce zero or more PCollection objects.
+- [x] PTransform: A PTransform represents a data processing operation or a step in our pipeline. A transform is applied to zero or more PCollection objects and produces zero or more PCollection objects.
+
+## Map, FlatMap, and Filter Transforms in Apache Beam
+- [x] Map: Applies a simple 1-to-1 mapping function over each element in the collection.
+- [x] FlatMap: Applies a simple 1-to-many mapping function over each element in the collection. The many elements are flattened into the resulting collection.
+- [x] Filter: Given a predicate, filter out all elements that don’t satisfy that predicate. May also be used to filter based on an inequality with a given value based on the comparison ordering of the element.
+
 
